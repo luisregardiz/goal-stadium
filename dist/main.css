@@ -439,28 +439,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 10rem;
 }
 
-.right-16 {
-  right: 4rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
-.right-20 {
-  right: 5rem;
-}
-
-.top-16 {
-  top: 4rem;
-}
-
 .top-14 {
   top: 3.5rem;
-}
-
-.right-24 {
-  right: 6rem;
 }
 
 .right-28 {
@@ -563,8 +543,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: 'soccer_league';
 
-  src: url('../src/font/soccerleague-webfont.woff2') format('woff2'),
-         url('../src/font/soccerleague-webfont.woff') format('woff');
+  src: url('./assets/font/soccerleague-webfont.woff2') format('woff2'),
+         url('./assets/font/soccerleague-webfont.woff') format('woff');
 
   font-weight: lighter;
 
@@ -572,12 +552,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .btn-svg {
-  background: url("../src/img/goal-btn-menu.svg") center center, linear-gradient(89.97deg, rgba(22, 32, 61, 0.01) -2.27%, rgba(22, 32, 61, 0.39) 25.9%, rgba(32, 61, 114, 0.8) 47.31%, rgba(22, 32, 61, 0.6) 68.73%, rgba(22, 32, 61, 0.01) 100.54%);
+  background: url("./assets/img/goal-btn-menu.svg") center center, linear-gradient(89.97deg, rgba(22, 32, 61, 0.01) -2.27%, rgba(22, 32, 61, 0.39) 25.9%, rgba(32, 61, 114, 0.8) 47.31%, rgba(22, 32, 61, 0.6) 68.73%, rgba(22, 32, 61, 0.01) 100.54%);
   background-size: contain;
 }
 
 .btn-svg:hover {
-  background: url("../src/img/goal-btn-menu-hover.svg") center center, linear-gradient(89.97deg, rgba(22, 32, 61, 0.01) -2.27%, rgba(22, 32, 61, 0.39) 25.9%, rgba(32, 61, 114, 0.8) 47.31%, rgba(22, 32, 61, 0.6) 68.73%, rgba(22, 32, 61, 0.01) 100.54%);
+  background: url("./assets/img/goal-btn-menu-hover.svg") center center, linear-gradient(89.97deg, rgba(22, 32, 61, 0.01) -2.27%, rgba(22, 32, 61, 0.39) 25.9%, rgba(32, 61, 114, 0.8) 47.31%, rgba(22, 32, 61, 0.6) 68.73%, rgba(22, 32, 61, 0.01) 100.54%);
   background-size: contain;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   transition: all ease-in-out 0.3s;
