@@ -4,12 +4,23 @@
     @apply absolute bottom-1 w-11/12 text-white bg-black text-center text-xl tracking-wider bg-opacity-30;
 }
 
+.aside {
+    @apply bg-black border border-goal-blue-200 shadow-aside min-h-screen bg-opacity-50 z-0 lg:flex hidden flex-col p-4;
+}
+.btn-top-goal {
+    @apply bg-goal-purple-100 text-slate-50 text-3xl  rounded-3xl border-4 border-goal-gray-100 flex items-center space-x-3 justify-between;
+}
+
+.card-goal {
+    @apply lg:min-w-0 min-w-fit relative flex flex-col items-center  justify-center;
+}
+
 @tailwind utilities;
 
 @font-face {
     font-family: 'soccer_league';
-    src: url('./assets/font/soccerleague-webfont.woff2') format('woff2'),
-         url('./assets/font/soccerleague-webfont.woff') format('woff');
+    src: url('../assets/font/soccerleague-webfont.woff2') format('woff2'),
+         url('../assets/font/soccerleague-webfont.woff') format('woff');
     font-weight: lighter;
     font-style: normal;
 
@@ -17,20 +28,51 @@
 
 @font-face {
     font-family: "optimus";
-    src: url('./assets/font/Optimus.woff') format('woff');
+    src: url('../assets/font/Optimus.woff') format('woff');
     font-weight: lighter;
     font-style: normal;
 }
 
+body::-webkit-scrollbar,  .card-scroll::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px;    
+    display: block;  
+  }
+  body::-webkit-scrollbar-thumb, .card-scroll::-webkit-scrollbar-thumb {
+    background:#123c5e;
+    border-radius: 6px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover,  .card-scroll::-webkit-scrollbar-thumb:hover {
+    background: #123c5e;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  body::-webkit-scrollbar-thumb:active,  .card-scroll::-webkit-scrollbar-thumb:active {
+    background-color: #124887
+    ;
+  }
+  body::-webkit-scrollbar-track, .card-scroll::-webkit-scrollbar-track {
+    background: #bbb0df;
+    border-radius: 6px;
+  }
+  
+  body::-webkit-scrollbar-track:hover,
+  body::-webkit-scrollbar-track:active,
+  .card-scroll::-webkit-scrollbar-track:hover,
+  .card-scroll::-webkit-scrollbar-track:active {
+  background: #bbb0df;
+  }
+
 
 .btn-svg {
-    background: url("./assets/img/goal-btn-menu.svg") center center, linear-gradient(89.97deg, rgba(22, 32, 61, 0.01) -2.27%, rgba(22, 32, 61, 0.39) 25.9%, rgba(32, 61, 114, 0.8) 47.31%, rgba(22, 32, 61, 0.6) 68.73%, rgba(22, 32, 61, 0.01) 100.54%);
+    background: url("../assets/img/goal-btn-menu.svg") center center, linear-gradient(89.97deg, rgba(22, 32, 61, 0.01) -2.27%, rgba(22, 32, 61, 0.39) 25.9%, rgba(32, 61, 114, 0.8) 47.31%, rgba(22, 32, 61, 0.6) 68.73%, rgba(22, 32, 61, 0.01) 100.54%);
     background-size: contain;
     
 }
 
 .btn-svg:hover {
-    background: url("./assets/img/goal-btn-menu-hover.svg") center center, linear-gradient(89.97deg, rgba(22, 32, 61, 0.01) -2.27%, rgba(22, 32, 61, 0.39) 25.9%, rgba(32, 61, 114, 0.8) 47.31%, rgba(22, 32, 61, 0.6) 68.73%, rgba(22, 32, 61, 0.01) 100.54%);
+    background: url("../assets/img/goal-btn-menu-hover.svg") center center, linear-gradient(89.97deg, rgba(22, 32, 61, 0.01) -2.27%, rgba(22, 32, 61, 0.39) 25.9%, rgba(32, 61, 114, 0.8) 47.31%, rgba(22, 32, 61, 0.6) 68.73%, rgba(22, 32, 61, 0.01) 100.54%);
     background-size: contain;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     transition: all ease-in-out 0.3s;
@@ -57,6 +99,7 @@
     border-radius: 2px;
     
 }
+
 
 .items-menu:hover {
     box-shadow: 0 0 8px 5px #fff7005d;
@@ -89,6 +132,18 @@
         background-size: cover;
     }
     
+    
 }
+
+@media (max-width: 1280px) {
+    .items-menu {
+        font-size: 22px;
+    }
+    .btn-back {
+        display: none;
+    }
+    
+}
+
 
 
