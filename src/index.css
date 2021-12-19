@@ -12,7 +12,7 @@
 }
 
 .card-goal {
-    @apply lg:min-w-max min-w-fit relative flex flex-col items-center  justify-center;
+    @apply lg:min-w-max min-w-fit relative flex flex-col items-center  justify-center cursor-pointer;
 }
 
 @tailwind utilities;
@@ -67,6 +67,9 @@ body::-webkit-scrollbar,  .card-scroll::-webkit-scrollbar {
 .w-division {
     max-width: 39rem;
 }
+
+
+
 
 .btn-svg {
     background: url("../assets/img/goal-btn-menu.svg") center center, linear-gradient(89.97deg, rgba(22, 32, 61, 0.01) -2.27%, rgba(22, 32, 61, 0.39) 25.9%, rgba(32, 61, 114, 0.8) 47.31%, rgba(22, 32, 61, 0.6) 68.73%, rgba(22, 32, 61, 0.01) 100.54%);
@@ -143,6 +146,49 @@ body::-webkit-scrollbar,  .card-scroll::-webkit-scrollbar {
     filter: blur(1px);
     opacity: 0.7;
 
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.border-swiper {
+    border: 5px solid rgba(32, 61, 114, 0.829);
+}
+
+.bg-modal {
+    background: rgb(0,0,0);
+    background: linear-gradient(266deg, rgba(0,0,0,0.75) 25%, rgba(82,8,147,0.5102415966386555) 52%, rgba(0,0,0,0.7539390756302521) 75%);
+}
+
+.swiper-wrapper img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    height: 400px;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {

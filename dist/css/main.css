@@ -527,6 +527,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+  cursor: pointer;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -582,6 +583,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .left-2 {
   left: 0.5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .z-0 {
@@ -711,6 +720,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -826,6 +843,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-goal-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 60 94 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -836,6 +858,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
+}
+
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
 }
 
 .bg-cover {
@@ -881,6 +907,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pr-4 {
@@ -1046,6 +1082,39 @@ body::-webkit-scrollbar-track:hover,
   opacity: 0.7;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-swiper {
+  border: 5px solid rgba(32, 61, 114, 0.829);
+}
+
+.bg-modal {
+  background: linear-gradient(266deg, rgba(0,0,0,0.75) 25%, rgba(82,8,147,0.5102415966386555) 52%, rgba(0,0,0,0.7539390756302521) 75%);
+}
+
+.swiper-wrapper img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .btn-svg, .btn-svg:hover {
     background-size: cover;
@@ -1071,6 +1140,10 @@ body::-webkit-scrollbar-track:hover,
 @media (min-width: 768px) {
   .md\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .md\:w-1\/4 {
+    width: 25%;
   }
 }
 

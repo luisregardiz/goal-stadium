@@ -1,3 +1,8 @@
+import swiper from "./modules/swiper.js";
+window.addEventListener("DOMContentLoaded", () => {
+    swiper();
+});
+
 //querySelector
 const menuResponsive = document.querySelector("#bg-menu-responsive");
 const sidebarResponsive = document.querySelector("#sidebar-responsive");
