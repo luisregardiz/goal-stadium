@@ -94,7 +94,7 @@ body::-webkit-scrollbar,  .card-scroll::-webkit-scrollbar {
     transform: scale(1.1);
 }
 
-#second-division, #third-division {
+#second-division, #third-division, #first-division {
     scroll-behavior: smooth;
 }
 

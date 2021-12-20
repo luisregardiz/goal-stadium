@@ -1,6 +1,8 @@
+import swiperResponsive from "./modules/swiper-responsive.js";
 import swiper from "./modules/swiper.js";
 window.addEventListener("DOMContentLoaded", () => {
     swiper();
+    swiperResponsive();
 });
 
 //querySelector

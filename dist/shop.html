@@ -102,42 +102,63 @@
                     <!-- Divisions /start -->
                     <div class="self-center lg:mt-6 my-5 lg:space-y-2 space-y-4 flex flex-col items-center">
                         <!-- First division /start -->
-                        <div class="lg:w-auto w-9/12 ">
-                            <div class="flex items-center">
-                                <h3 class="title-division">1st division</h3>
-                                <div class="lg:hidden block ml-4">
-                                    <img src="./assets/icons/scroll-icon.svg" alt="Scroll Icon" class="w-8">
-                                </div>
-                            </div>
-                            <ul  class="flex items-center space-x-4 overflow-x-auto card-scroll lg:p-0 py-5 px-2 bg-black lg:bg-transparent bg-opacity-20 rounded ">
-                                <li class=" card-goal">
-                                    <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
-                                        class="price-card">$ 9.50</span>
-                                </li>
-                                <li class=" card-goal">
-                                    <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
-                                        class="price-card">$ 9.50</span>
-                                </li>
-                                <li class="card-goal">
-                                    <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
-                                        class="price-card">$ 9.50</span>
-                                </li>
-                                <li class=" card-goal">
-                                    <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
-                                        class="price-card">$ 9.50</span>
-                                </li>
-                                <li class="card-goal">
-                                    <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
-                                        class="price-card">$ 9.50</span>
-                                </li>
 
-                            </ul>
+                        <div class="flex items-center lg:w-auto w-9/12  justify-center relative">
+                            
+                            <button id="btn-l-first-responsive" class="absolute lg:hidden block top-28 z-10 -left-12 btn-swiper"><img src="./assets/icons/left-arrow.svg"
+                                alt="Left arrow" class="w-16"></button>
+                            
+                            <div class=" w-full w-division">
+                                <div class="flex items-center">
+                                    <h3 class="title-division">1st division</h3>
+                                    <div class="lg:hidden block ml-4">
+                                        <img src="./assets/icons/scroll-icon.svg" alt="Scroll Icon" class="w-8">
+                                    </div>
+                                </div>
+                                <ul id="first-division" class="flex items-center space-x-4 overflow-x-auto card-scroll lg:p-0 py-5 px-2 bg-black lg:bg-transparent bg-opacity-20">
+                                    <li
+                                        class=" card-goal">
+                                        <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
+                                            class="price-card">$ 9.50</span>
+                                    </li>
+                                    <li
+                                        class="card-goal">
+                                        <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
+                                            class="price-card">$ 9.50</span>
+                                    </li>
+                                    <li
+                                        class=" card-goal">
+                                        <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
+                                            class="price-card">$ 9.50</span>
+                                    </li>
+                                    <li
+                                        class=" card-goal">
+                                        <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
+                                            class="price-card">$ 9.50</span>
+                                    </li>
+                                    <li
+                                        class=" card-goal">
+                                        <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
+                                            class="price-card">$ 9.50</span>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+                            <button id="btn-r-first-responsive" class="absolute lg:hidden block top-28 -right-14 btn-swiper"><img
+                                src="./assets/icons/right-arrow.svg" alt="Right arrow" class="w-16"></button>
+                            
+
+                            
                         </div>
                         <!-- First division /end -->
                         <!-- Second division /start -->
-                        <div class="flex items-center lg:w-auto w-9/12  justify-center">
+                        <div class="flex items-center lg:w-auto w-9/12  justify-center relative">
                             <button id="btn-l-second" class="relative lg:block  hidden top-5 btn-swiper"><img src="./assets/icons/left-arrow.svg"
                                     alt="Left arrow" class="w-16"></button>
+                            <button id="btn-l-second-responsive" class="absolute lg:hidden block top-28 z-10 -left-12 btn-swiper"><img src="./assets/icons/left-arrow.svg"
+                                alt="Left arrow" class="w-16"></button>
+                            
                             <div class=" w-full w-division">
                                 <div class="flex items-center">
                                     <h3 class="title-division">2nd division</h3>
@@ -189,22 +210,28 @@
 
                                 </ul>
                             </div>
+                            <button id="btn-r-second-responsive" class="absolute lg:hidden block top-28 -right-14 btn-swiper"><img
+                                src="./assets/icons/right-arrow.svg" alt="Right arrow" class="w-16"></button>
                             <button id="btn-r-second" class="relative lg:block hidden top-5 left-2 btn-swiper"><img
                                     src="./assets/icons/right-arrow.svg" alt="Right arrow" class="w-16"></button>
+
+                            
                         </div>
                         <!-- Second division /end -->
                         <!-- Third division /start -->
-                        <div class="flex items-center lg:w-auto w-9/12 justify-center">
+                        <div class="flex items-center lg:w-auto w-9/12  justify-center relative">
                             <button id="btn-l-third" class="relative lg:block hidden top-5 btn-swiper"><img src="./assets/icons/left-arrow.svg"
                                     alt="Left arrow" class="w-16"></button>
-                            <div class=" w-full w-division">
+                            <button id="btn-l-third-responsive" class="absolute lg:hidden block top-28 z-10 -left-12 btn-swiper"><img src="./assets/icons/left-arrow.svg"
+                                alt="Left arrow" class="w-16"></button>
+                            <div class=" w-full w-division ">
                                 <div class="flex items-center">
                                     <h3 class="title-division">3rd division</h3>
                                     <div class="lg:hidden block ml-4">
                                         <img src="./assets/icons/scroll-icon.svg" alt="Scroll Icon" class="w-8">
                                     </div>
                                 </div>
-                                <ul id="third-division" class="flex items-center space-x-4 overflow-x-auto card-scroll lg:p-0 py-5 px-2 bg-black lg:bg-transparent bg-opacity-20 w-full">
+                                <ul id="third-division" class="flex items-center space-x-4 overflow-x-auto card-scroll lg:p-0 py-5 px-2 bg-black lg:bg-transparent bg-opacity-20 w-full  ">
                                     <li
                                         class=" card-goal">
                                         <img src="./assets/img/card.svg" alt="Card" class="lg:w-28 w-36 relative"><span
@@ -274,6 +301,8 @@
 
                                 </ul>
                             </div>
+                            <button id="btn-r-third-responsive" class="absolute lg:hidden block top-28 -right-14 btn-swiper"><img
+                                src="./assets/icons/right-arrow.svg" alt="Right arrow" class="w-16"></button>
                             <button id="btn-r-third" class="relative lg:block hidden top-5 left-2 btn-swiper"><img
                                     src="./assets/icons/right-arrow.svg" alt="Right arrow" class="w-16"></button>
                         </div>
@@ -286,11 +315,11 @@
         </section>
         <!-- Modal Shop /start -->
         <div id="modal-carrousel"
-            class="bg-modal bg-opacity-60 absolute top-0 left-0 w-full h-full hidden items-center justify-center z-40">
+            class="bg-modal bg-opacity-60 fixed top-0 left-0 w-full h-full hidden items-center justify-center z-40">
             <svg id="close-modal" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-slate-100 font-black absolute top-10 left-10 cursor-not-allowed" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
-            <div class="md:w-1/4 w-3/5  py-5 px-8 ">
+            <div class="md:w-1/4 w-9/12  py-5 px-8 ">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <img src="https://static.goalstadium.com/img/character/01.webp" alt="Goal Stadium Character" class="swiper-slide" data-index="0">
