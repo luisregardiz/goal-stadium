@@ -3,6 +3,7 @@ export default function swiper() {
     const modalCarrousel = document.querySelector("#modal-carrousel");
     const cardCarousel = document.querySelectorAll(".swiper-slide");
     const promptCard = document.querySelector("#prompt-card");
+    const closeModal = document.querySelector("#close-modal");
 
     const swiper = new Swiper(".mySwiper", {
         effect: "cards",
@@ -14,6 +15,52 @@ export default function swiper() {
 
     const randomTime = Math.floor(Math.random() * (15000 - 8000)) + 8000;
 
+    const modal = () => {
+        swiper.autoplay.stop();
+        modalCarrousel.addEventListener("click", (ev) => {
+            ev.stopPropagation();
+            modalCarrousel.classList.remove("flex");
+            modalCarrousel.classList.add("hidden");
+            window.location.reload();
+        });
+
+        cardCarousel.forEach((card) => {
+            const swiperIndex = swiper.realIndex;
+            const cardIndex = card.dataset.index;
+            if (swiperIndex === Number(cardIndex)) {
+                const img = document.createElement("img");
+                const span = document.createElement("span");
+
+                img.src = card.src;
+                img.alt = card.alt;
+                img.classList.add(
+                    "w-full",
+                    "h-full",
+                    "object-cover",
+                    "rounded-t-md"
+                );
+
+                span.innerText = "Added to your team";
+                span.classList.add("text-center", "text-slate-800", "my-2");
+                promptCard.appendChild(img);
+                promptCard.appendChild(span);
+                promptCard.classList.remove("hidden");
+                promptCard.classList.add(
+                    "flex",
+                    "animate__animated",
+                    "animate__fadeInDown",
+                    "animate__faster"
+                );
+                closeModal.classList.remove("cursor-not-allowed");
+                closeModal.classList.add("cursor-pointer");
+                setTimeout(() => {
+                    promptCard.classList.remove("flex");
+                    promptCard.classList.add("hidden");
+                }, 5000);
+            }
+        });
+    };
+
     document.querySelectorAll(".card-goal").forEach((card) => {
         card.addEventListener("click", () => {
             swiper.autoplay.start();
@@ -21,23 +68,7 @@ export default function swiper() {
             if (modalCarrousel.classList.contains("hidden")) {
                 modalCarrousel.classList.remove("hidden");
                 modalCarrousel.classList.add("flex");
-                setTimeout(() => {
-                    swiper.autoplay.stop();
-                    modalCarrousel.addEventListener("click", (ev) => {
-                        ev.stopPropagation();
-                        modalCarrousel.classList.remove("flex");
-                        modalCarrousel.classList.add("hidden");
-                        window.location.reload();
-                    });
-
-                    cardCarousel.forEach((card) => {
-                        const swiperIndex = swiper.realIndex;
-                        const cardIndex = card.dataset.index;
-                        if (swiperIndex === Number(cardIndex)) {
-                            console.log(card);
-                        }
-                    });
-                }, randomTime);
+                setTimeout(modal, randomTime);
             } else {
                 modalCarrousel.classList.remove("flex");
                 modalCarrousel.classList.add("hidden");

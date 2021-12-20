@@ -426,6 +426,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
 }
 
 .container {
@@ -589,8 +593,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 2.5rem;
 }
 
-.right-0 {
-  right: 0px;
+.right-10 {
+  right: 2.5rem;
+}
+
+.left-10 {
+  left: 2.5rem;
 }
 
 .z-0 {
@@ -603,6 +611,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-30 {
   z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .col-auto {
@@ -672,6 +684,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -720,8 +740,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
-.w-1\/4 {
-  width: 25%;
+.w-28 {
+  width: 7rem;
 }
 
 .w-24 {
@@ -730,6 +750,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 .grid-flow-col {
@@ -810,6 +834,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-t-md {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -843,9 +876,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-goal-blue-100 {
+.bg-slate-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(18 60 94 / var(--tw-bg-opacity));
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -874,6 +907,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-center {
   background-position: center;
+}
+
+.stroke-2 {
+  stroke-width: 2;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-4 {
@@ -909,11 +951,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.5rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -937,6 +974,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -952,6 +997,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-slate-50 {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.text-slate-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @font-face {
@@ -1038,7 +1099,7 @@ body::-webkit-scrollbar-track:hover,
   scroll-behavior: smooth;
 }
 
-#second-division::-webkit-scrollbar, #third-division::-webkit-scrollbar {
+#second-division::-webkit-scrollbar, #third-division::-webkit-scrollbar, .card-scroll::-webkit-scrollbar {
   display: none;
 }
 
@@ -1085,7 +1146,7 @@ body::-webkit-scrollbar-track:hover,
 .swiper {
   width: 100%;
   height: 100%;
-  z-index: 30;
+  z-index: 40;
 }
 
 .swiper-slide {
@@ -1121,12 +1182,6 @@ body::-webkit-scrollbar-track:hover,
   }
 }
 
-@media (max-width: 1024px) {
-  #second-division::-webkit-scrollbar, #third-division::-webkit-scrollbar {
-    display: block;
-  }
-}
-
 @media (max-width: 1280px) {
   .items-menu {
     font-size: 22px;
@@ -1148,6 +1203,10 @@ body::-webkit-scrollbar-track:hover,
 }
 
 @media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
   }
